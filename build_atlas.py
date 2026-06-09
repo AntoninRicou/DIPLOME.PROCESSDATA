@@ -13,8 +13,8 @@ coordinates and `aspect` (w/h) to size the quad — that gives a crisp image
 with no padding bleed and the original proportions.
 
 Inputs:
-  ../project/datas/images/<path>
-  ../project/static/data/mapping.json
+  ../DIPLOME.Feedback/datas/images/<path>
+  ../DIPLOME.Feedback/static/data/mapping.json
 
 Outputs (./cache/):
   atlas.jpg     packed texture
@@ -29,7 +29,7 @@ from pathlib import Path
 from PIL import Image
 
 HERE = Path(__file__).resolve().parent
-PROJECT_DIR = HERE.parent / "project"
+PROJECT_DIR = HERE.parent / "DIPLOME.Feedback"
 IMAGES_DIR = PROJECT_DIR / "datas" / "images"
 MAPPING_PATH = PROJECT_DIR / "static" / "data" / "mapping.json"
 CACHE_DIR = HERE / "cache"
